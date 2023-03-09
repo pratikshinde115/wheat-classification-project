@@ -1,0 +1,33 @@
+[2023-03-09 12:56:27,004] root - INFO - ----------------Starting the Pipeline----------------
+[2023-03-09 12:56:27,004] root - INFO - Step1: Running the process of get_and_load_data
+[2023-03-09 12:56:27,004] root - INFO - 1.1 Read the config_path to get the given dataset path
+[2023-03-09 12:56:27,006] root - INFO - 1.2 Converting of given dataset into to Dataframe is started
+[2023-03-09 12:56:27,008] root - INFO - 1.3 completion of converting into df is successfull!
+[2023-03-09 12:56:27,008] root - INFO - 1.4 saving of converted df is started
+[2023-03-09 12:56:27,011] root - INFO - 1.5 Saving into data/raw folder is done!
+[2023-03-09 12:56:27,011] root - INFO - 1.6 get and load data into df is Fully Completed!
+[2023-03-09 12:56:27,011] root - INFO - Step2: Running the processing_data step
+[2023-03-09 12:56:27,011] root - INFO - 2.1 Read the config for processing the df
+[2023-03-09 12:56:27,026] root - INFO - 2.2 Transforming the df using standard scaler and saving it
+[2023-03-09 12:56:27,029] root - INFO - 2.3 Transforming of df is completed!
+[2023-03-09 12:56:27,031] root - INFO - 2.4 Saving transformed df Done!
+[2023-03-09 12:56:27,031] root - INFO - 2.5 Saving scaler tranformer object is also Done!
+[2023-03-09 12:56:27,031] root - INFO - 2.6 Processing of df is Completed!!
+[2023-03-09 12:56:27,031] root - INFO - Step3: Running the split_and_saved_data
+[2023-03-09 12:56:27,031] root - INFO - 3.1 Get config for splitting the df
+[2023-03-09 12:56:27,034] root - INFO - 3.2 Splitting is started
+[2023-03-09 12:56:27,039] root - INFO - 3.3 Train csv is generated
+[2023-03-09 12:56:27,040] root - INFO - 3.4 Test csv is also generated
+[2023-03-09 12:56:27,040] root - INFO - 3.5 Splitting is Completed!
+[2023-03-09 12:56:27,040] root - INFO - Step4:inally train_and_evaluate Step is started
+[2023-03-09 12:56:27,040] root - INFO - 4.1 Read the config for train and evaluating
+[2023-03-09 12:56:27,046] root - INFO - 4.2 clf-model variable is created for classification
+[2023-03-09 12:56:27,049] root - INFO - 4.3 model training is completed!
+[2023-03-09 12:56:27,050] root - INFO - 4.4 Evalution of metrics is begin
+[2023-03-09 12:56:27,053] root - INFO - 4.5 evaluation of metrics is completed!
+[2023-03-09 12:56:27,053] root - INFO - 4.6 Saving the scores in json is completed
+[2023-03-09 12:56:27,053] root - INFO - 4.7 also saving parameter into json is done too!
+[2023-03-09 12:56:27,054] root - INFO - 4.8 Saving trained model into pickle file is completed
+[2023-03-09 12:56:27,054] root - INFO - 4.9 training and evaluation of model is Completed!!
+[2023-03-09 12:56:27,054] root - INFO - ----------------Pipeline is completed!----------------
+[2023-03-09 12:56:27,054] root - INFO - 
