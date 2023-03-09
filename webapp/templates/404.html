@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>
+    404 Error
+  </title>
+</head>
+
+<body>
+
+  <div class="container col-lg-4 col-lg-offset-4 main">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="error-template">
+          <h1> Oops! 😱</h1>
+          <h2> 404 Not Found </h2>
+          <div class="error-details">
+            ERROR: {{ error.error }}
+          </div>
+          <div class="error-actions go-home">
+            <a href="/" class="btn btn-primary btn-lg btn-block"><span class="mr-1" style="font-size: 1.5rem;">🏠</span> Take Me Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body {
+      font-size: large;
+      text-align: center;
+      background-color: #eff8ff;
+    }
+
+    .main {
+      background-color: black;
+      color: white;
+      opacity: 70%;
+      border-radius: 20px;
+      margin-top: 10%;
+      padding: 30px 20px 40px 20px;
+    }
+
+    .go-home {
+      color: white;
+      border-radius: 20px;
+      padding: 20px 20px 40px 20px;
+    }
+  </style>
+
+</body>
+
+</html>

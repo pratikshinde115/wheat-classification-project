@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wheat Classification</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1 class="container">🌾 Wheat Classification</h1>
+
+
+    <form method="post" >
+        <div class="container">
+            <input type="number" step="0.0001" id="area" name="area"  class="form-control" placeholder="🌡️ Area(10.59 to 21.18)"><br>
+            <input type="number" step="0.0001" id="perimeter" name="perimeter"  class="form-control" placeholder="📏 Perimeter(12.41 to 17.25)"><br>
+            <input type="number" step="0.0001" id="compactness" name="compactness"  class="form-control" placeholder="🔳 Compactness(0.8081 to 0.9183)"><br>
+            <input type="number" step="0.0001" id="length_of_kernel" name="length_of_kernel" class="form-control"placeholder="🌾 Length of kernel(4.899 to 6.675)"><br>
+            <input type="number" step="0.0001" id="width_of_kernel" name="width_of_kernel" class="form-control" placeholder="🌾 Width of kernel(2.63 to 4.033)"><br>
+            <input type="number" step="0.0001" id="asymmetry_coefficient" name="asymmetry_coefficient" class="form-control" placeholder="🔀 Asymmetry coefficient(0.7651 to 8.456)"><br>
+            <input type="number" step="0.0001" id="length_of_kernel_groove" name="length_of_kernel_groove" class="form-control" placeholder="🌾 Length of kernel(4.519 to 6.55)"><br>
+        
+            <button type="submit" class="btn btn-primary">🔮 Prediction</button>
+        </div>
+        <div class='container'>
+            <h5>
+                {% if response %}
+                
+                    Classified 🌾 Wheat category is : {{response}}
+                {% endif %}</h5>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
